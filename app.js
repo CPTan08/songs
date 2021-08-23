@@ -55,7 +55,7 @@ app.delete("/songs/:id", (req, res) => {
     (song) => song.id === parseInt(req.params.id)
   );
   const indexToDelete = songs.indexOf(songToDelete);
-  const songToDelete = songs.splice(indexToDelete, 1);
+  songs.splice(indexToDelete, 1);
   res.status(200).send(songToDelete);
 });
 
