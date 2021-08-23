@@ -1,5 +1,4 @@
 const express = require("express");
-const { reset } = require("nodemon");
 const app = express();
 app.use(express.json());
 
